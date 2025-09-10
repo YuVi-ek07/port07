@@ -1,0 +1,228 @@
+<!--
+  Data Analytics Portfolio
+  Single-file HTML/CSS/JS template. Replace placeholder text (YOUR NAME, links, email, repo URLs, resume.pdf) with your own info.
+  - Save as index.html and place resume.pdf and any demo links in same site folder to enable downloads/live links.
+  - Built responsive with modern layout; no external dependencies.
+-->
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>VIVEK PATIL — Data Analyst</title>
+  <meta name="description" content="Portfolio of a Data Analyst — projects built with Power BI, SQL, Python, Excel">
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#9aa4b2;--accent:#06b6d4;--glass:rgba(255,255,255,0.03);--glass-2:rgba(255,255,255,0.02);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial}
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;background:linear-gradient(180deg,#071028 0%,#081026 100%);color:#e6eef7;line-height:1.5}
+    .container{max-width:1100px;margin:0 auto;padding:28px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#0891b2);display:flex;align-items:center;justify-content:center;font-weight:700}
+    nav{display:flex;gap:12px;align-items:center}
+    a.btn{background:var(--accent);padding:10px 14px;border-radius:10px;color:white;text-decoration:none;font-weight:600}
+    .hero{display:grid;grid-template-columns:1fr 380px;gap:28px;align-items:center;padding:28px 0}
+    .intro h1{margin:0;font-size:32px}
+    .intro p{color:var(--muted);margin-top:12px}
+    .cta{margin-top:18px;display:flex;gap:12px}
+    .card{background:linear-gradient(180deg,var(--glass),var(--glass-2));border:1px solid rgba(255,255,255,0.03);padding:18px;border-radius:14px}
+    .skills{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+    .skill{padding:8px 12px;border-radius:999px;background:rgba(255,255,255,0.03);color:var(--muted);font-weight:600}
+    .projects{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:18px}
+    .proj{padding:16px;border-radius:12px;background:linear-gradient(180deg,rgba(255,255,255,0.01),transparent);border:1px solid rgba(255,255,255,0.02)}
+    .proj h3{margin:0 0 8px 0}
+    .proj p{margin:0;color:var(--muted);font-size:14px}
+    .proj .tags{margin-top:10px;display:flex;gap:8px;flex-wrap:wrap}
+    .tag{background:rgba(255,255,255,0.02);padding:6px 10px;border-radius:999px;font-size:13px;color:var(--muted)}
+    footer{margin-top:28px;padding:20px 0;color:var(--muted);display:flex;justify-content:space-between;align-items:center}
+    form{display:grid;gap:10px}
+    input,textarea{background:transparent;border:1px solid rgba(255,255,255,0.04);padding:10px;border-radius:8px;color:inherit}
+    textarea{min-height:120px}
+    @media (max-width:900px){.hero{grid-template-columns:1fr;}.projects{grid-template-columns:1fr}.brand .hide-sm{display:none}}
+    .links{display:flex;gap:10px;align-items:center}
+    .icon{width:36px;height:36px;border-radius:8px;background:#0891b2;display:inline-flex;align-items:center;justify-content:center;color:white}
+    .resume-link{border:1px solid rgba(255,255,255,0.04);padding:8px 12px;border-radius:10px;color:inherit;text-decoration:none;background-color: #0891b2;}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">DA</div>
+        <div>
+          <div style="font-weight:700">VIVEK PATIL</div>
+          <div style="font-size:12px;color:var(--muted)">Data Analyst</div>
+        </div>
+      </div>
+      <nav>
+        <a class="resume-link" href="/resume.pdf" download>Download Resume</a>
+        <a class="btn" href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="intro">
+        <h1>Hi — I'm <span style="color:var(--accent)">VIVEK PATIL</span><br><small style="font-weight:600;color:var(--muted);font-size:16px">Data Analyst</small></h1>
+        <p>I analyze and visualize data to uncover insights and build interactive dashboards that support business decision-making. Skilled in SQL, Power BI, Python, and Excel.</p>
+        <div class="cta">
+          <a class="btn" href="https://github.com/YuVi-ek07" target="_blank">GitHub</a>
+          <a class="resume-link" href="https://www.linkedin.com/in/vivek-patil-b60a45298" target="_blank">LinkedIn</a>
+        </div>
+        <div class="card" style="margin-top:18px">
+          <div style="font-weight:700">Skills</div>
+          <div class="skills">
+            <div class="skill">SQL</div>
+            <div class="skill">Excel</div>
+            <div class="skill">Python</div>
+             <div class="skill">Pandas</div>
+            <div class="skill">Numpy</div>
+            <div class="skill">Matplotlib</div>
+            <div class="skill">Power BI</div>
+            <div class="skill">Tableau</div>
+            <div class="skill">Data Cleaning</div>
+            <div class="skill">Visualization</div>
+            <div class="skill">Machine Learning</div>
+           
+          </div>
+        </div>
+      </div>
+
+      <aside class="card">
+        <div style="display:flex;flex-direction:column;gap:12px">
+          <div style="text-align:center">
+            <div style="width:96px;height:96px;border-radius:14px;margin:0 auto;background:linear-gradient(135deg,var(--accent),#0891b2);
+            display:flex;align-items:center;justify-content:center;font-size:28px;font-weight:700">DA</div>
+            <div style="margin-top:8px;font-weight:700">VIVEK PATIL</div>
+            <div style="color:var(--muted);font-size:13px">Data Analyst</div>
+          </div>
+          <div>
+            <div style="font-weight:700;margin-bottom:8px">Contact</div>
+            <div style="font-size:14px;color:var(--muted)">Email: <a href="mailto:yourname@gmail.com">vdpatil11032000@gmail.com</a></div>
+            <div style="font-size:14px;color:var(--muted)">Location: Nandurbar,Nandurbar,India</div>
+          </div>
+          <div style="display:flex;gap:8px;justify-content:center;margin-top:8px">
+            <a class="icon" href="https://github.com/your-username" target="_blank">GH</a>
+            <a class="icon" href="https://www.linkedin.com/in/vivek-patil-b60a45298" target="_blank">LD</a>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section>
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <h2 style="margin:0">Selected Projects</h2>
+        <div style="color:var(--muted);font-size:14px">4 Data Analytics Projects</div>
+      </div>
+
+      <div class="projects" style="margin-top:12px">
+        <article class="proj">
+          <h3>Road Accident Analysis</h3>
+          <p>Built an interactive dashboard in Power BI to analyze accident trends and causes.</p>
+          <div class="tags"><span class="tag">Power BI</span><span class="tag">Excel</span></div>
+          <div style="margin-top:12px;display:flex;gap:8px">
+            <a class="resume-link" href="https://github.com/your-username/road-accident-analysis" target="_blank">View Code</a>
+          </div>
+        </article>
+
+        <article class="proj">
+          <h3>HR Analytics</h3>
+          <p>Analyzed attrition and workforce patterns, created a Power BI dashboard for HR decision-making.</p>
+          <div class="tags"><span class="tag">Power BI</span><span class="tag">Excel</span></div>
+          <div style="margin-top:12px;display:flex;gap:8px">
+            <a class="resume-link" href="https://github.com/your-username/hr-analytics" target="_blank">View Code</a>
+          </div>
+        </article>
+
+        <article class="proj">
+          <h3>Superstore Sales Dashboard</h3>
+          <p>Designed a Power BI dashboard to track sales, profit, and customer behavior.</p>
+          <div class="tags"><span class="tag">Power BI</span><span class="tag">Excel</span></div>
+          <div style="margin-top:12px;display:flex;gap:8px">
+            <a class="resume-link" href="https://github.com/your-username/superstore-analysis" target="_blank">View Code</a>
+          </div>
+        </article>
+
+        <article class="proj">
+          <h3>Customer Order Analysis</h3>
+          <p>Analyzed order trends, revenue, and customer behavior to support business growth.</p>
+          <div class="tags"><span class="tag">SQL</span><span class="tag">Power BI</span></div>
+          <div style="margin-top:12px;display:flex;gap:8px">
+            <a class="resume-link" href="https://github.com/your-username/customer-order-analysis" target="_blank">View Code</a>
+          </div>
+        </article>
+
+          <article class="proj">
+          <h3>E-Commerce Database with SQL</h3>
+          <p>Designed relational tables (Customer, Product, Orders, OrderItems) and performed queries for sales insights, customer behavior analysis, and revenue trends.</p>
+          <div class="tags"><span class="tag">SQL</span><span class="tag">Excel</span></div>
+          <div style="margin-top:12px;display:flex;gap:8px">
+            <a class="resume-link" href="https://yuvi-ek07.github.io/Sql_Projects/project2.sql" target="_blank">View Code</a>
+          </div>
+        </article>
+         <article class="proj">
+          <h3>Airline Database with SQL</h3>
+          <p> Created schema (Airline, Aircraft, Flight, Passenger, Reservation) and wrote SQL queries to analyze flight operations, passenger bookings, and reservation patterns.</p>
+          <div class="tags"><span class="tag">SQL</span><span class="tag">Excel</span></div>
+          <div style="margin-top:12px;display:flex;gap:8px">
+            <a class="resume-link" href="https://yuvi-ek07.github.io/Sql_Projects/prject1.sql" target="_blank">View Code</a>
+          </div>
+        </article>
+          <article class="proj">
+          <h3> Hotel Management Database with SQL</h3>
+          <p>  Structured tables (Users, Hotels, Reviews, Booking) and executed queries to evaluate customer feedback, booking patterns, and hotel performance.</p>
+          <div class="tags"><span class="tag">SQL</span><span class="tag">Excel</span></div>
+          <div style="margin-top:12px;display:flex;gap:8px">
+            <a class="resume-link" href=" https://yuvi-ek07.github.io/Sql_Projects/project3.sql" target="_blank">View Code</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" style="margin-top:22px">
+      <div style="display:grid;grid-template-columns:1fr 380px;gap:18px">
+        <div class="card">
+          <h3 style="margin-top:0">Get in touch</h3>
+          <p style="color:var(--muted)">Interested in collaborating or want to know more about my work? Send me a quick message.</p>
+          <form onsubmit="handleContact(event)">
+            <input id="name" placeholder="Your name" required>
+            <input id="email" placeholder="Your email" type="email" required>
+            <textarea id="message" placeholder="Your message" required></textarea>
+            <div style="display:flex;gap:8px">
+              <button class="btn" type="submit">Send</button>
+              <a class="resume-link" href="mailto:vdpatil11032000@gmail.com">Email Me</a>
+            </div>
+          </form>
+        </div>
+        <aside class="card">
+          <div style="font-weight:700">More Links</div>
+          <div style="margin-top:10px;display:flex;flex-direction:column;gap:8px">
+            <a href="https://github.com/YuVi-ek07" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/your-linkedin" target="_blank">LinkedIn</a>
+            <a href="/resume.pdf" download>Resume (PDF)</a>
+            <a href="mailto:yourname@gmail.com">vdpatil11032000@gmail.com</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <footer>
+      <div>© <span id="year"></span> YOUR NAME</div>
+      <div style="color:var(--muted)">Built with SQL · Python · Power BI</div>
+    </footer>
+  </div>
+  <script>
+    document.getElementById('year').innerText = new Date().getFullYear();
+    function handleContact(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+      const subject = encodeURIComponent('Portfolio contact from ' + name);
+      const body = encodeURIComponent('Name: '+name+"\nEmail: "+email+"\n\n"+message);
+      window.location.href = `mailto:yourname@gmail.com?subject=${subject}&body=${body}`;
+    }
+  </script>
+</body>
+</html>
